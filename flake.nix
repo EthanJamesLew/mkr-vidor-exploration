@@ -108,6 +108,9 @@
         extensions = [ "rust-src" ];
         targets = [ "thumbv6m-none-eabi" ];
       };
+	
+      # default for testing nix build
+      defaultPackage.x86_64-linux = self.packages.x86_64-linux.bossac;
 
       devShell.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.mkShell {
         name = "vidor-rs-shell";
