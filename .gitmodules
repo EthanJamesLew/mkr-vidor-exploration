@@ -1,0 +1,3 @@
+[submodule "usbd-blaster"]
+	path = usbd-blaster
+	url = https://github.com/sameer/usbd-blaster.git
